@@ -21,7 +21,7 @@ useSeoMeta({
 })
 
 async function getJobs() {
-    await $fetch('http://159.89.226.231:8055/api/v1/jobs/my', {
+    await $fetch('https://testappis.natucultura.com/api/v1/jobs/my', {
         headers: {
             'Authorization': 'token ' + userStore.user.token,
             'Content-Type': 'application/json'

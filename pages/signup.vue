@@ -11,7 +11,7 @@ async function submitForm() {
 
     errors.value = []
 
-    await $fetch('http://159.89.226.231:8055/api/v1/users/', {
+    await $fetch('https://testappis.natucultura.com/api/v1/users/', {
         method: 'POST',
         body: {
             username: email.value,

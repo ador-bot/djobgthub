@@ -1,5 +1,5 @@
 <script setup>
- const { data: jobs } = await useFetch('http://159.89.226.231:8055/api/v1/jobs/newest/')
+ const { data: jobs } = await useFetch('https://testappis.natucultura.com/api/v1/jobs/newest/')
 </script>
 
 <template>

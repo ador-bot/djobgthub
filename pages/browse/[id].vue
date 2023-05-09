@@ -1,7 +1,7 @@
 <script setup>
 const route = useRoute()
 
-const {data: job} = await useFetch('http://159.89.226.231:8055/api/v1/jobs/' + route.params.id + '/')
+const {data: job} = await useFetch('https://testappis.natucultura.com/api/v1/jobs/' + route.params.id + '/')
 
 useSeoMeta({
     title: job.value.title,

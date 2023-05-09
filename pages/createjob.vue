@@ -11,7 +11,7 @@ onMounted(() => {
     }
 })
 
-let {data: jobCategories} = await useFetch('http://159.89.226.231:8055/api/v1/jobs/categories/')
+let {data: jobCategories} = await useFetch('https://testappis.natucultura.com/api/v1/jobs/categories/')
 
 let category = ref('')
 let title = ref('')
@@ -38,7 +38,7 @@ async function submitForm() {
     if (company_email.value == '') { errors.value.push('The company email field is missing')}
 
     if (errors.value.length == 0) {
-        await $fetch('http://159.89.226.231:8055/api/v1/jobs/create/', {
+        await $fetch('https://testappis.natucultura.com/api/v1/jobs/create/', {
             method: 'POST',
             headers: {
                 'Authorization': 'token ' + userStore.user.token,
