@@ -10,7 +10,7 @@ function performSearch() {
 
 // Categories
 
-let {data: jobCategories} = await useFetch('http://127.0.0.1:8000/api/v1/jobs/categories')
+let {data: jobCategories} = await useFetch('http://159.89.226.231:8055/api/v1/jobs/categories')
 let selectedCategoriesRef = ref('')
 let selectedCategories = []
 
@@ -28,7 +28,7 @@ function toggleCategory(id) {
 
 //
 
-let {data: jobs} = await useFetch('http://127.0.0.1:8000/api/v1/jobs/', {
+let {data: jobs} = await useFetch('http://159.89.226.231:8055/api/v1/jobs/', {
     query: { query: queryRef, categories: selectedCategoriesRef }
 })
 </script>
